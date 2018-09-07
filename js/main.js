@@ -49,8 +49,11 @@ function getUserData(){
 $("#submit-button").on("click",function(e){
     getUserData();
     alert("Se ha guardado correctamente el usuario")
-})
 
+})
+$("#btnLimpiar").click(function(e) {
+    $("#form")[0].reset();
+});
 function delUserData(){
     alert("funcionando")
 }
@@ -60,9 +63,10 @@ $("#del").on("click",function(e){
 	delUserData();
 
 })
-$("#add").click(function(evento){
-    alert( "Este boton tendría que Ocultar y mostrar el Formulario para agregar nuevos usuarios" );
-})
+// $("#add").click(function(evento){
+//     alert( "Este boton tendría que Ocultar y mostrar el Formulario para agregar nuevos usuarios" );
+
+// })
 // $("#del").click(function(){
 //     alert( "Funciona" );
 // }

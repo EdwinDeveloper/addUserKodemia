@@ -56,3 +56,6 @@ h2{
     display: flex;
     justify-content: center;
 }
+.form{
+    display: none;
+}
