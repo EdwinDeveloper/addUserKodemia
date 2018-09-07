@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tabla de usuarios</title>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="container-portada">
+                <section class="capa-gradient"></section>
+                <section class="container-details">
+                    <div class="details">
+                        <h1>Consulta de Usuarios</h1>
+                    </div>
+                </section>
+            </section>
+        </header>
+        <section class="container">
+
+            <table class="table">
+                <h2>Tabla de Usuarios</h2>
+                <thead >
+                  <tr>
+                    <td id="name" scope="col">Nombre</td>
+                    <td id="age" scope="col">Edad</td>
+                    <td id="email" scope="col">Email</td>
+                    <td id="phone"scope="col">Teléfono</td>
+                    <td id="address" scope="col">Dirección</td>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="wrapper">
+                </tbody>
+            </table>
+                <input type="button" id="add" class="btn btn-primary" value="Agerar Usuario" style="font-size:14px;cursor:pointer;margin:15px;padding:5px;"/>
+
+        <section class="row">
+            <div id="form" class="form col-sm-6 offset-sm-3">
+                <h3>Ingresa un Nuevo Usuario</h3>
+                <form action="" class="custom-form">
+                    <div class="form-group">
+                        <label for="">Nombre:</label>
+                        <input id="users-name" class="form-control" type="text" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Edad:</label>
+                        <input id="users-age" class="form-control" value="" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail:</label>
+                        <input id="users-email" class="form-control" value="" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Teléfono:</label>
+                        <input id="users-phone" class="form-control" type="text" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Dirección:</label>
+                        <input id="users-address" class="form-control" type="text" value="">
+                    </div>
+                    <div id="submit-button" class="btn btn-primary" >Agregar</div>
+                </form>
+            </div>
+        </section>
+        </section>
+        
+         </main>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCOOcVdXlcPJgfmjd1jL4MQfocGgGNymeM",
+        authDomain: "kodemia-aa0b2.firebaseapp.com",
+        databaseURL: "https://kodemia-aa0b2.firebaseio.com",
+        projectId: "kodemia-aa0b2",
+        storageBucket: "kodemia-aa0b2.appspot.com",
+        messagingSenderId: "99290171627"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
